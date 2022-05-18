@@ -1,0 +1,208 @@
+lr=0.001
+time:Mon May  2 15:55:58 2022,Epoch: 633, att_val: [0.48140866 0.51859176]
+Training: loss = 1.23513, auc = 0.68554 | Val: loss = 1.22835, auc = 0.70872
+
+nb_epochs = 1500
+patience = 300
+drop_out=0.2
+pos_weight=8.0
+lr = 0.001  # learning rate
+l2_coef = 0.001 # weight decay
+# numbers of hidden units per each attention head in each layer
+hid_units = [1000,1000]
+n_heads = [1,1]  # additional entry for the output layer
+residual = False
+nonlinearity = tf.nn.relu
+time:Thu May  5 02:58:27 2022,Epoch: 1340, att_val: [0.04815337 0.95184606]
+Training: loss = 1.13973, auc = 0.75606 | Val: loss = 1.22371, auc = 0.71848
+Early stop! Min loss:  1.188307285308838 , Max auc:  0.7267237862097105
+Early stop model validation loss:  1.1917004585266113 , auc:  0.7239950080399358
+load model from : check/my/my_allMP_multi_fea_.ckpt
+Test loss: 1.2153288125991821 ; Test auc: 0.7047475823163711
+
+
+print_interval=20
+batch_size = 1
+nb_epochs = 1000
+patience = 100
+drop_out=0.2
+pos_weight=8.0
+lr = 0.001  # learning rate
+l2_coef = 0.001  # weight decay
+# numbers of hidden units per each attention head in each layer
+hid_units = [1000,1000]
+n_heads = [1,1]  # additional entry for the output layer
+residual = False
+nonlinearity = tf.nn.relu
+model = HeteGAT_multi
+time:Tue May  3 12:50:08 2022,Epoch: 580, att_val: [0.23787698 0.76212406]
+Training: loss = 1.17627, auc = 0.73162 | Val: loss = 1.21049, auc = 0.70667
+Early stop! Min loss:  1.1983059644699097 , Max auc:  0.7179326565387476
+Early stop model validation loss:  1.1983059644699097 , auc:  0.7179326565387476
+load model from : check/my/my_allMP_multi_fea_.ckpt
+Test loss: 1.2168638706207275 ; Test auc: 0.6982164786246067
+
+drop_out=0.4
+Training: loss = 1.26687, auc = 0.65660 | Val: loss = 1.24398, auc = 0.69692
+time:Tue May  3 19:27:25 2022,Epoch: 1400, att_val: [0.30849248 0.6915088 ]
+Training: loss = 1.26699, auc = 0.66116 | Val: loss = 1.24510, auc = 0.69602
+time:Tue May  3 19:31:38 2022,Epoch: 1420, att_val: [0.3411274 0.6588716]
+Training: loss = 1.25668, auc = 0.66121 | Val: loss = 1.23928, auc = 0.70173
+time:Tue May  3 19:35:50 2022,Epoch: 1440, att_val: [0.34191903 0.6580805 ]
+Training: loss = 1.27202, auc = 0.64841 | Val: loss = 1.24452, auc = 0.69396
+
+{batch_size = 1
+nb_epochs = 800
+patience = 100
+pos_weight=8.0
+lr = 0.001  # learning rate
+l2_coef = 0  # weight decay
+# numbers of hidden units per each attention head in each layer
+hid_units = [1000]
+n_heads = [5, 1]  # additional entry for the output layer
+residual = False
+nonlinearity = tf.nn.elu}
+
+time:1650201190.9698677,Epoch: 215, att_val: [0.35370782 0.64629287]
+Training: loss = 0.72639, auc = 0.70349 | Val: loss = 0.24595, auc = 0.69741
+
+batch_size = 1
+nb_epochs = 800
+patience = 100
+pos_weight=6.0
+lr = 0.001  # learning rate
+l2_coef = 0  # weight decay
+# numbers of hidden units per each attention head in each layer
+hid_units = [1000,1000]
+n_heads = [3,3, 1]  # additional entry for the output layer
+residual = False
+nonlinearity = tf.nn.elu
+model = HeteGAT_multi
+
+Early stop! Min loss:  0.21072344481945038 , Max auc:  0.706829145366837
+Early stop model validation loss:  0.21072344481945038 , auc:  0.706829145366837
+
+batch_size = 1
+nb_epochs = 800
+patience = 100
+drop_out=0.3
+pos_weight=6.0
+lr = 0.0005  # learning rate
+l2_coef = 0  # weight decay
+# numbers of hidden units per each attention head in each layer
+hid_units = [1000,1000]
+n_heads = [3,3, 1]  # additional entry for the output layer
+time:1650340726.553484,Epoch: 0, att_val: [0.5101169  0.48988283]
+Training: loss = 0.70136, auc = 0.52477 | Val: loss = 0.23397, auc = 0.58477
+time:1650340794.5350325,Epoch: 1, att_val: [0.505926   0.49407458]
+Training: loss = 0.70113, auc = 0.52001 | Val: loss = 0.23394, auc = 0.61327
+time:1650340864.4327517,Epoch: 2, att_val: [0.500297 0.499703]
+Training: loss = 0.70109, auc = 0.53924 | Val: loss = 0.23385, auc = 0.62393
+time:1650340935.3747468,Epoch: 3, att_val: [0.49745485 0.50254524]
+Training: loss = 0.70080, auc = 0.55002 | Val: loss = 0.23373, auc = 0.62898
+time:1650341003.6380882,Epoch: 4, att_val: [0.48967478 0.51032513]
+Training: loss = 0.70066, auc = 0.55651 | Val: loss = 0.23362, auc = 0.63141
+time:1650341072.6509044,Epoch: 5, att_val: [0.48093608 0.5190637 ]
+Training: loss = 0.70049, auc = 0.57417 | Val: loss = 0.23354, auc = 0.63314
+time:1650341144.8656945,Epoch: 6, att_val: [0.47194234 0.52805877]
+Training: loss = 0.70014, auc = 0.59523 | Val: loss = 0.23345, auc = 0.63372
+time:1650341215.2258942,Epoch: 7, att_val: [0.4599061  0.54009384]
+Training: loss = 0.69990, auc = 0.60153 | Val: loss = 0.23335, auc = 0.63389
+time:1650341284.8392768,Epoch: 8, att_val: [0.4458007 0.5541998]
+Training: loss = 0.69965, auc = 0.59809 | Val: loss = 0.23323, auc = 0.63387
+time:1650341355.5079467,Epoch: 9, att_val: [0.42978242 0.5702158 ]
+Training: loss = 0.69934, auc = 0.60103 | Val: loss = 0.23311, auc = 0.63361
+time:1650341421.8546426,Epoch: 10, att_val: [0.4115026  0.58849657]
+Training: loss = 0.69898, auc = 0.60335 | Val: loss = 0.23299, auc = 0.63340
+time:1650341487.4072773,Epoch: 11, att_val: [0.38834357 0.6116553 ]
+Training: loss = 0.69886, auc = 0.59735 | Val: loss = 0.23287, auc = 0.63304
+time:1650341554.9249787,Epoch: 12, att_val: [0.3658823 0.634118 ]
+Training: loss = 0.69861, auc = 0.59495 | Val: loss = 0.23275, auc = 0.63264
+time:1650341620.6814659,Epoch: 13, att_val: [0.34060332 0.6593969 ]
+Training: loss = 0.69821, auc = 0.60151 | Val: loss = 0.23262, auc = 0.63222
+time:1650341687.985979,Epoch: 14, att_val: [0.31242606 0.6875749 ]
+Training: loss = 0.69784, auc = 0.60058 | Val: loss = 0.23247, auc = 0.63186
+time:1650341754.8907847,Epoch: 15, att_val: [0.2836871 0.7163125]
+Training: loss = 0.69747, auc = 0.60430 | Val: loss = 0.23233, auc = 0.63137
+time:1650341823.8413086,Epoch: 16, att_val: [0.25385925 0.74614036]
+Training: loss = 0.69720, auc = 0.59701 | Val: loss = 0.23217, auc = 0.63078
+time:1650341891.1565828,Epoch: 17, att_val: [0.22556789 0.7744326 ]
+Training: loss = 0.69725, auc = 0.59205 | Val: loss = 0.23202, auc = 0.63055
+time:1650341960.764512,Epoch: 18, att_val: [0.20002702 0.79997253]
+Training: loss = 0.69687, auc = 0.59024 | Val: loss = 0.23186, auc = 0.63038
+time:1650342028.9704707,Epoch: 19, att_val: [0.17622934 0.82377034]
+Training: loss = 0.69604, auc = 0.59969 | Val: loss = 0.23171, auc = 0.63013
+time:1650342097.9170563,Epoch: 20, att_val: [0.15574285 0.84425807]
+Training: loss = 0.69574, auc = 0.59855 | Val: loss = 0.23155, auc = 0.62975
+time:1650342165.8587823,Epoch: 21, att_val: [0.13643058 0.8635698 ]
+Training: loss = 0.69521, auc = 0.59937 | Val: loss = 0.23139, auc = 0.62950
+time:1650342235.1779606,Epoch: 22, att_val: [0.119962   0.88003856]
+Training: loss = 0.69481, auc = 0.59834 | Val: loss = 0.23123, auc = 0.62921
+time:1650342306.281226,Epoch: 23, att_val: [0.10489091 0.89510846]
+Training: loss = 0.69476, auc = 0.59937 | Val: loss = 0.23106, auc = 0.62910
+time:1650342387.0840278,Epoch: 24, att_val: [0.09187394 0.90812755]
+Training: loss = 0.69486, auc = 0.59287 | Val: loss = 0.23089, auc = 0.62902
+time:1650342459.4226558,Epoch: 25, att_val: [0.0808517 0.9191507]
+Training: loss = 0.69411, auc = 0.58996 | Val: loss = 0.23072, auc = 0.62908
+time:1650342526.1809578,Epoch: 26, att_val: [0.07112771 0.92887247]
+Training: loss = 0.69331, auc = 0.59836 | Val: loss = 0.23055, auc = 0.62913
+time:1650342593.6269388,Epoch: 27, att_val: [0.06252784 0.937474  ]
+Training: loss = 0.69360, auc = 0.59403 | Val: loss = 0.23038, auc = 0.62930
+time:1650342663.6682217,Epoch: 28, att_val: [0.05518298 0.9448164 ]
+Training: loss = 0.69276, auc = 0.59554 | Val: loss = 0.23021, auc = 0.62943
+time:1650342727.8776445,Epoch: 29, att_val: [0.04927123 0.95072657]
+Training: loss = 0.69177, auc = 0.60308 | Val: loss = 0.23004, auc = 0.62952
+time:1650342802.9183443,Epoch: 30, att_val: [0.04386498 0.95613205]
+Training: loss = 0.69188, auc = 0.59833 | Val: loss = 0.22986, auc = 0.62972
+time:1650342872.5562952,Epoch: 31, att_val: [0.03890179 0.9610988 ]
+Training: loss = 0.69165, auc = 0.59880 | Val: loss = 0.22969, auc = 0.62993
+time:1650342943.9560425,Epoch: 32, att_val: [0.03482836 0.96517396]
+Training: loss = 0.69016, auc = 0.60670 | Val: loss = 0.22953, auc = 0.63012
+time:1650343013.305256,Epoch: 33, att_val: [0.03123037 0.96876836]
+Training: loss = 0.69190, auc = 0.59062 | Val: loss = 0.22936, auc = 0.63035
+time:1650343085.4887743,Epoch: 34, att_val: [0.02815076 0.9718483 ]
+Training: loss = 0.69098, auc = 0.59640 | Val: loss = 0.22918, auc = 0.63057
+time:1650343151.5559344,Epoch: 35, att_val: [0.02612899 0.97387147]
+Training: loss = 0.69071, auc = 0.59721 | Val: loss = 0.22900, auc = 0.63074
+time:1650343220.7717125,Epoch: 36, att_val: [0.0240164 0.9759846]
+Training: loss = 0.68992, auc = 0.59816 | Val: loss = 0.22883, auc = 0.63093
+time:1650343289.2800188,Epoch: 37, att_val: [0.02204723 0.97795147]
+Training: loss = 0.68881, auc = 0.60142 | Val: loss = 0.22866, auc = 0.63111
+time:1650343357.91189,Epoch: 38, att_val: [0.02039498 0.979605  ]
+Training: loss = 0.68903, auc = 0.60170 | Val: loss = 0.22849, auc = 0.63138
+time:1650343426.4747787,Epoch: 39, att_val: [0.01887028 0.9811278 ]
+Training: loss = 0.68821, auc = 0.60210 | Val: loss = 0.22833, auc = 0.63165
+time:1650343495.9285474,Epoch: 40, att_val: [0.01746847 0.98252845]
+Training: loss = 0.68732, auc = 0.60346 | Val: loss = 0.22816, auc = 0.63191
+time:1650343564.1214619,Epoch: 41, att_val: [0.01640418 0.983596  ]
+Training: loss = 0.68934, auc = 0.59666 | Val: loss = 0.22799, auc = 0.63214
+time:1650343634.0648828,Epoch: 42, att_val: [0.01517828 0.98482364]
+Training: loss = 0.68732, auc = 0.60486 | Val: loss = 0.22783, auc = 0.63234
+time:1650343704.179216,Epoch: 43, att_val: [0.01421112 0.98578805]
+Training: loss = 0.68913, auc = 0.59431 | Val: loss = 0.22768, auc = 0.63262
+time:1650343773.4252198,Epoch: 44, att_val: [0.01311365 0.98688805]
+Training: loss = 0.68787, auc = 0.60026 | Val: loss = 0.22753, auc = 0.63296
+time:1650343843.4628015,Epoch: 45, att_val: [0.01242739 0.98757064]
+Training: loss = 0.68711, auc = 0.59915 | Val: loss = 0.22737, auc = 0.63323
+time:1650343911.7695637,Epoch: 46, att_val: [0.01182793 0.98816836]
+Training: loss = 0.68712, auc = 0.59857 | Val: loss = 0.22723, auc = 0.63347
+time:1650343979.535521,Epoch: 47, att_val: [0.01124193 0.98876005]
+Training: loss = 0.68686, auc = 0.59945 | Val: loss = 0.22708, auc = 0.63380
+time:1650344048.0286021,Epoch: 48, att_val: [0.01069729 0.98930275]
+Training: loss = 0.68651, auc = 0.59993 | Val: loss = 0.22694, auc = 0.63402
+time:1650344124.593375,Epoch: 49, att_val: [0.01033673 0.9896636 ]
+Training: loss = 0.68570, auc = 0.60374 | Val: loss = 0.22681, auc = 0.63428
+time:1650344194.7196124,Epoch: 50, att_val: [0.0098212  0.99017787]
+Training: loss = 0.68668, auc = 0.60044 | Val: loss = 0.22667, auc = 0.63467
+time:1650344267.2858832,Epoch: 51, att_val: [0.00937525 0.9906222 ]
+Training: loss = 0.68498, auc = 0.60362 | Val: loss = 0.22657, auc = 0.63504
+time:1650344337.409436,Epoch: 52, att_val: [0.00877976 0.99122024]
+Training: loss = 0.68659, auc = 0.59631 | Val: loss = 0.22646, auc = 0.63541
+time:1650344409.7354276,Epoch: 53, att_val: [0.00857215 0.9914258 ]
+Training: loss = 0.68362, auc = 0.60661 | Val: loss = 0.22632, auc = 0.63573
+time:1650344481.8217397,Epoch: 54, att_val: [0.00840455 0.9915971 ]
+Training: loss = 0.68461, auc = 0.60413 | Val: loss = 0.22618, auc = 0.63609
+time:1650344552.1705234,Epoch: 55, att_val: [0.00823944 0.99176395]
+Training: loss = 0.68606, auc = 0.59834 | Val: loss = 0.22606, auc = 0.63642
+time:1650344623.1761818,Epoch: 56, att_val: [0.0080915 0.9919099]
+Training: loss = 0.68518, auc = 0.60077 | Val: loss = 0.22595, auc = 0.63669
